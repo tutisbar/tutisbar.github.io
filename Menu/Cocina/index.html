@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuti's Pizzas</title>
+    <meta name="keywords" content="tutis, tuti, tutis pizza, el tutis, pizza, pizza tutis">
+    <link rel="icon" href="../../Tutis-logo.jpg">
+    <title>Tuti's Cocina</title>
 
     <style>
         body{
             margin: 0;
+            background-color: #eae9d5;
         }
+
+        #panel{
+            background-color: #deb408;
+            padding: 5vh 0.5vw;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
         .seccion{
             box-shadow: 0 0 20px 0 rgb(79, 79, 79);
-            border-radius: 20px;
+            border-radius: 0 0 20px 20px;
             width: 90vw;
             margin: auto;
+            margin-bottom: 15vh;
             font-family: 'Arial Narrow Bold', sans-serif;
-            margin: 3vh 2vw;
+            background-color: rgb(255, 255, 255);
+
         }
         .tabla{
             margin: auto;
             padding-bottom: 10%;
             line-height: 135%;
+        }
+        .tabla-cabecera{
+            width: 100%;
+            padding-bottom: 1vh;
+            text-align: center;
+        }
+        .tabla-cabecera-fondo{
+            background-color: #deb408;
+            margin: 0;
         }
         h3{
             text-align: center;
@@ -42,7 +64,7 @@
             font-size: 1.4em;
             border-bottom: 2px solid black;
             margin-bottom: 40px;
-            background-color: rgba(255, 242, 100, 0.543);
+            margin: 0;
         }
         #contenedor-cafe{
             display: flex;
@@ -60,12 +82,12 @@
             font-size: 1.1em;
         }
         #contenedor-foto-inicial{
-            background-image: url("pngtree-minimalistic-cartoon-hand-drawn-catering-food-background-picture-image_1020545.png");
+            background-image: url("pngtree-vibrant-ingredients-uncooked-spaghetti-fusilli-parsley-and-fresh-tomatoes-perfect-for-image_13831889.png");
             background-repeat: no-repeat;
-            background-position: bottom;
+            background-position: center -30vh;
             background-size: cover;
             height: 27vh;
-            width: 98vw;
+            width: 100%;
             background-attachment: fixed;
         }
         #Inicio{
@@ -75,12 +97,7 @@
             font-family: 'Arial Narrow Bold', sans-serif;
         }
 
-        #panel{
-            background-color: rgb(246, 255, 142);
-            padding: 5vh 0.5vw;
-            text-align: center;
-            font-size: 1.3em;
-        }
+
         #panel ul{
             list-style: none;
             display: flex;
@@ -99,7 +116,7 @@
     <div id="contenedor-foto-inicial">
     </div>
     <div id="dar-margin">
-        <h2 id="Inicio">Pizzas</h2>
+        <h2 id="Inicio">Cocina</h2>
         <article id="Nota" style="margin-left: 1px; margin-bottom: 15vh; box-sizing: border-box;">
             <h2>Nota:</h2>
             <p>Todos los precios aquí fijados son en MN (Moneda Nacional o CUP)</p>
@@ -107,9 +124,9 @@
     </article>
     
     <section class="seccion">
-        <table class="tabla">
+        <table class="tabla tabla-cabecera">
             <tbody>
-                <tr>
+                <tr class="tabla-cabecera-fondo">
                     <td class="columnas">
                         <span>Ofertas</span>
                     </td>
@@ -117,45 +134,37 @@
                         <span>Precios </span>
                     </td>
                 </tr>
-                <tr>
-                    <td>Pizza de Queso</td>
-                    <td>350</td>
-                </tr>
-                <tr>
-                    <td>Pizza de Jamón y Queso</td>
-                    <td>520</td>
-                </tr>
-                <tr>
-                    <td>Pizza Hawaiana</td>
-                    <td>600</td>
-                </tr>
-                <tr>
-                    <td>Pizza de Camarones</td>
-                    <td>650</td>
-                </tr>
-                <tr>
-                    <td>Pizza de Chorizo</td>
-                    <td>520</td>
-                </tr>
-                <tr>
-                    <td>Pizza de Vegetales</td>
-                    <td>420</td>
-                </tr>
-                <tr>
-                    <td>Pizza de Champiñón</td>
-                    <td>470</td>
-                </tr>
             </tbody>
         </table>
+        <table class="tabla">
+            <tbody>
+                <tr>
+                    <td>Espagueti de Queso</td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <td>Espagueti de Jamón y Queso</td>
+                    <td>540</td>
+                </tr>
+                <tr>
+                    <td>Espagueti de Camarón</td>
+                    <td>550</td>
+                </tr>
+                <tr>
+                    <td>Espagueti de Chorizo</td>
+                    <td>540</td>
+                </tr>
+                <tr>
+                    <td>Empanadas de Queso</td><td>300</td></tr><tr><td>Empanadas de Jamón y Queso</td><td>400</td></tr><tr><td>Empanadas de Pollo</td><td>470</td></tr><tr><td>Croquetas</td><td>360</td></tr><tr><td>Coctel de Camarones</td><td>500</td></tr><tr><td>Tacos de Pollo</td><td>650</td></tr><tr><td>Tacos de Camarones</td><td>700</td></tr><tr><td>Ensalada Fría</td><td>260</td></tr><tr><td>Enchilada de Camarones</td><td>990</td></tr><tr><td>Camarón al Ajillo</td><td>990</td></tr><tr><td>Langosta</td><td>1300</td></tr><tr><td>Ensalada de Estación</td><td>100</td></tr></tbody></table>
     
     </section>
 <footer>
     <h3>Volver a...</h3>
     <article id="panel">
         <ul>
-            <li><a href="../Entrantes/Entrantes.html">Entrantes</a></li>
-            <li><a href="../Cocteleria/Cocteleria.html">Coctelería</a></li>
-            <li><a href="../Cocina/Cocina.html">Cocina</a></li>
+            <li><a href="../Entrantes/index.html">Entrantes</a></li>
+            <li><a href="../Cocteleria/index.html">Coctelería</a></li>
+            <li><a href="../Pizza/index.html">Pizzas</a></li>
         </ul>
     </article>
 </footer>

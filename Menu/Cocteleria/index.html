@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="tutis, tuti, tutis pizza, el tutis, pizza, pizza tutis">
+    <link rel="icon" href="../../Tutis-logo.jpg">>
     <title>Tuti's Coctelería</title>
 
     <style>
         body{
             margin: 0;
+            background-color: #eae9d5;
         }
+
+        #panel{
+            background-color: #deb408;
+            padding: 5vh 0.5vw;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
         .seccion{
             box-shadow: 0 0 20px 0 rgb(79, 79, 79);
-            border-radius: 20px;
+            border-radius: 0 0 20px 20px;
             width: 90vw;
             margin: auto;
+            margin-bottom: 15vh;
             font-family: 'Arial Narrow Bold', sans-serif;
-            margin: 3vh 2vw;
+            background-color: rgb(255, 255, 255);
+
         }
         .tabla{
             margin: auto;
             padding-bottom: 10%;
             line-height: 135%;
+        }
+        .tabla-cabecera{
+            width: 100%;
+            padding-bottom: 1vh;
+            text-align: center;
+        }
+        .tabla-cabecera-fondo{
+            background-color: #deb408;
+            margin: 0;
         }
         h3{
             text-align: center;
@@ -42,7 +64,7 @@
             font-size: 1.4em;
             border-bottom: 2px solid black;
             margin-bottom: 40px;
-            background-color: rgba(255, 242, 100, 0.543);
+            background-color: #deb408;
         }
         #contenedor-cafe{
             display: flex;
@@ -65,7 +87,7 @@
             background-position: center -45vh;
             background-size: cover;
             height: 27vh;
-            width: 98vw;
+            width: 100%;
             background-attachment: fixed;
         }
         #Inicio{
@@ -75,12 +97,6 @@
             font-family: 'Arial Narrow Bold', sans-serif;
         }
 
-        #panel{
-            background-color: rgb(246, 255, 142);
-            padding: 5vh 0.5vw;
-            text-align: center;
-            font-size: 1.3em;
-        }
         #panel ul{
             list-style: none;
             display: flex;
@@ -99,7 +115,7 @@
     <div id="contenedor-foto-inicial">
     </div>
     <div id="dar-margin">
-        <h2 id="Inicio">Coctelería</h2>
+        <h2 id="Inicio">Cocina</h2>
         <article id="Nota" style="margin-left: 1px; margin-bottom: 15vh; box-sizing: border-box;">
             <h2>Nota:</h2>
             <p>Todos los precios aquí fijados son en MN (Moneda Nacional o CUP)</p>
@@ -107,16 +123,20 @@
     </article>
     
     <section class="seccion">
-        <table class="tabla tragos">
+        <table class="tabla tabla-cabecera">
             <tbody>
-                <tr>
+                <tr class="tabla-cabecera-fondo">
                     <td class="columnas">
                         <span>Ofertas</span>
                     </td>
                     <td class="columnas">
-                        <span>Precios</span>
+                        <span>Precios </span>
                     </td>
                 </tr>
+            </tbody>
+        </table>
+        <table class="tabla tragos">
+            <tbody>
                 <tr>
                     <td>Mojito</td>
                     <td>300</td>
@@ -199,9 +219,9 @@
     <h3>Volver a...</h3>
     <article id="panel">
         <ul>
-            <li><a href="../Entrantes/Entrantes.html">Entrantes</a></li>
-            <li><a href="../Pizza/Pizzas.html">Pizzas</a></li>
-            <li><a href="../Cocina/Cocina.html">Cocina</a></li>
+            <li><a href="../Entrantes/index.html">Entrantes</a></li>
+            <li><a href="../Pizza/index.html">Pizzas</a></li>
+            <li><a href="../Cocina/index.html">Cocina</a></li>
         </ul>
     </article>
 </footer>
