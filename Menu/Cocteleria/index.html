@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="tutis, tuti, tutis pizza, el tutis, pizza, pizza tutis">
-    <link rel="icon" href="../../Tutis-logo.jpg">>
+    <link rel="icon" href="../../Tutis-logo.jpg">
     <title>Tuti's Coctelería</title>
 
     <style>
+
         body{
             margin: 0;
-            background-color: #eae9d5;
+            background: linear-gradient(white 60%, #f0cc3c86);
+        }
+
+        #contenedor-foto-inicial{
+            background-image: url("primer-plano-amigos-cocteles_1098-3969.jpg");
+            background-repeat: no-repeat;
+            background-position: center -45vh;
+            background-size: cover;
+            height: 27vh;
+            width: 100%;
+            background-attachment: fixed;
+        }
+
+        #contenedor-cafe{
+            display: flex;
+            margin-left: 5vw;
+            border-bottom: black solid 2.7px;
+            margin-right: 5vw;
+            margin-bottom: 2%;
+        }
+        #contenedor-cafe img{
+            width: 15vh;
+            margin: auto;
+        }
+
+        .tabla{
+            border-collapse: collapse;
         }
 
         #panel{
@@ -32,13 +59,19 @@
         }
         .tabla{
             margin: auto;
-            padding-bottom: 10%;
+            padding-bottom: 8vh;
             line-height: 135%;
+            } 
+
+        br{
+            margin: 3vh;
         }
+
         .tabla-cabecera{
             width: 100%;
             padding-bottom: 1vh;
             text-align: center;
+            margin-bottom: 2vh;
         }
         .tabla-cabecera-fondo{
             background-color: #deb408;
@@ -49,12 +82,27 @@
             font-size: 2em;
         }
         .tragos{
-            padding-top: 2vh;
+            padding-top: 3vh;
         }
 
-        td{
+        .contenedor{
+            text-align: center;
+            border-bottom: black solid 2px;
+            margin: 0 5vw;
+            margin-bottom: 1.9%;
+        }
+        .contenedor h3{
+            margin: 1.5%;
+            font-size: 1.7em;
+        }
+
+        .tabla tr:nth-child(2n)  {
+            background-color: rgba(141, 141, 141, 0.137);
+        }
+
+        .tabla td{
             width: 40vw;
-            padding: 0.4%;
+            padding: 0.5%;
         }
         span{
             font-weight: 600;
@@ -66,13 +114,7 @@
             margin-bottom: 40px;
             background-color: #deb408;
         }
-        #contenedor-cafe{
-            display: flex;
-            margin-left: 5vw;
-        }
-        #contenedor-cafe img{
-            width: 15vh;
-        }
+
 
         #Nota{
             padding: 0.4%;
@@ -81,20 +123,15 @@
             background-color: rgba(158, 158, 158, 0.399);
             font-size: 1.1em;
         }
-        #contenedor-foto-inicial{
-            background-image: url("primer-plano-amigos-cocteles_1098-3969.jpg");
-            background-repeat: no-repeat;
-            background-position: center -45vh;
-            background-size: cover;
-            height: 27vh;
-            width: 100%;
-            background-attachment: fixed;
-        }
+
         #Inicio{
             margin: 5vh 5vw;
             padding: 2%; 
             text-align: center; 
-            font-family: 'Arial Narrow Bold', sans-serif;
+            font-family: "Brush Script MT", 'Arial Narrow Bold', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 500;
+            text-shadow: #deb408 0px 0px 5px; 
         }
 
         #panel ul{
@@ -105,9 +142,23 @@
 
         }
         #panel li{
-            margin: 0 5vw;
-            margin-left: 6vw;
+            margin: auto;
         }
+
+        .precio-producto{
+            text-align: center;
+        }
+
+        button{
+            background-color: rgb(239, 200, 25);
+            padding: 1.5vh 5vw;
+        }
+        #panel a{
+            text-decoration: none;
+        }
+
+
+
 
     </style>
 </head>
@@ -115,7 +166,7 @@
     <div id="contenedor-foto-inicial">
     </div>
     <div id="dar-margin">
-        <h2 id="Inicio">Cocina</h2>
+        <h2 id="Inicio">Coctelería</h2>
         <article id="Nota" style="margin-left: 1px; margin-bottom: 15vh; box-sizing: border-box;">
             <h2>Nota:</h2>
             <p>Todos los precios aquí fijados son en MN (Moneda Nacional o CUP)</p>
@@ -126,78 +177,354 @@
         <table class="tabla tabla-cabecera">
             <tbody>
                 <tr class="tabla-cabecera-fondo">
-                    <td class="columnas">
+                    <th class="columnas">
                         <span>Ofertas</span>
-                    </td>
-                    <td class="columnas">
+                    </th>
+                    <th class="columnas">
                         <span>Precios </span>
-                    </td>
+                    </th>
                 </tr>
             </tbody>
         </table>
+        <div class="contenedor">
+            <h3>Batidos</h3>
+        </div>
+        <table class="tabla batidos">
+            <tbody>
+                <tr>
+                    <td class="nombre-producto">Batido de Helado</td>
+                    <td class="precio-producto">350</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Batido de Maní</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Batido de Frutas</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contenedor" style="margin-top: 5vh;">
+            <h3>Tragos</h3>
+        </div>
         <table class="tabla tragos">
             <tbody>
                 <tr>
-                    <td>Mojito</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Mojito</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Cubata</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Cubata</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Screedriver</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Screedriver</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Mary Pickford</td>
-                    <td>250</td>
+                    <td class="nombre-producto">Mary Pickford</td>
+                    <td class="precio-producto">250</td>
                 </tr>
                 <tr>
-                    <td>Margarita</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Margarita</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Caipiriña</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Caipiroska</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Caipiroska</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Caipirissima</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Caipirissima</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Shot Tricolor</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Michelada</td>
-                    <td>450</td>
+                    <td class="nombre-producto">Chelada</td>
+                    <td class="precio-producto">450</td>
                 </tr>
                 <tr>
-                    <td>Gin Cola</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Devil Margarita</td>
+                    <td class="precio-producto">450</td>
                 </tr>
                 <tr>
-                    <td>Trinidad Colonial</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Ruso Negro</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Sangría</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Ruso Blanco 300</td>
+                    <td class="precio-producto">450</td>
                 </tr>
                 <tr>
-                    <td>Tinto Verano</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Dulce Amor</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Daiquirí</td>
-                    <td>300</td>
+                    <td class="nombre-producto">Sex on the Beach</td>
+                    <td class="precio-producto">300</td>
                 </tr>
                 <tr>
-                    <td>Daiquirí Rebelde</td>
-                    <td>300</td></tr><tr><td>Habana Especial</td><td>300</td></tr><tr><td>Manhattan</td><td>350</td></tr><tr><td>Blue Lagoon</td><td>300</td></tr><tr><td>Copa de vino blanco</td><td>250</td></tr><tr><td>Copa de vino tinto</td><td>250</td></tr><tr><td>Copa de helado</td><td>250</td></tr><tr><td>Batido de helado</td><td>250</td></tr><tr><td>Milk coke</td><td>300</td></tr><tr><td>Malteada</td><td>300</td></tr><tr><td>H.C Reserva</td><td>250</td></tr><tr><td>H.C Reserva</td><td>250</td></tr><tr><td>H.C Special</td><td>250</td></tr><tr><td>H.C años</td><td>335</td></tr><tr><td>H.C Cuban Dark Rum</td><td>250</td></tr><tr><td>H.C Añejo blanco</td><td>250</td></tr><tr><td>H.C Añejo blanco</td><td>250</td></tr><tr><td>H.C años</td><td>250</td></tr><tr><td>H.C Profundo</td><td>250</td></tr><tr><td>H.C Ritual</td><td>300</td></tr><tr><td>Pacto Navio</td><td>700</td></tr><tr><td>Elixir</td><td>250</td></tr><tr><td>Eliot Hall</td><td>200</td></tr><tr><td>Ballentines</td><td>450</td></tr><tr><td>George Bills</td><td>200</td></tr><tr><td>Glen Scolans</td><td>200</td></tr><tr><td>Escoth Lands W</td><td>200</td></tr><tr><td>8 PM</td><td>180</td></tr><tr><td>Janmesson</td><td>450</td></tr><tr><td>Kindilan</td><td>200</td></tr><tr><td>Jose Sarmento</td><td>300</td></tr><tr><td>Tres Sombreros (silver)</td><td>270</td></tr><tr><td>Tres Sombreros (golden)</td><td>275</td></tr><tr><td>Olmeca Chocolate</td><td>300</td></tr><tr><td>Olmeca Silver</td><td>300</td></tr><tr><td>Olmeca Rep</td><td>325</td></tr><tr><td>Contessa</td><td>250</td></tr><tr><td>Mouka</td><td>250</td></tr><tr><td>Absoult Vodka</td><td>250</td></tr><tr><td>SamaraKaya</td><td>250</td></tr><tr><td>Lyubov</td><td>260</td></tr><tr><td>Gin</td><td>250</td></tr><tr><td>Beefeater</td><td>290</td></tr><tr><td>Reython</td><td>240</td></tr><tr><td>Malt Cream</td><td>240</td></tr><tr><td>Ruavieja crema</td><td>300</td></tr>
-                </tbody>
-                </table>
+                    <td class="nombre-producto">Iris Sceewdrivers</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Michelada</td>
+                    <td class="precio-producto">450</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Rastafari</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Old Fashion</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Fresh Mojito</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Alexander</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Gin Cola</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Trinidad Colonial</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Sangría</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Tinto Verano</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Daiquirí</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Daiquirí Rebelde</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Daiquirí de Frutas</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Habana Especial</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Manhattan</td>
+                    <td class="precio-producto">350</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Blue Lagoon</td>
+                    <td class="precio-producto">350</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Copa de vino blanco</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                  
+                <tr>
+                    <td class="nombre-producto">Copa de vino tinto</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Copa de helado</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Milk Coke</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Malteada</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+
+                <tr>
+                    <td class="nombre-producto">H.C Reserva</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C Reserva</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C Special</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C años</td>
+                    <td class="precio-producto">335</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C Cuban Dark Rum</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C Añejo blanco</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C Añejo blanco</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C años</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C Profundo</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">H.C Ritual</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Pacto Navio</td>
+                    <td class="precio-producto">700</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Elixir</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Eliot Hall</td>
+                    <td class="precio-producto">200</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Ballentines</td>
+                    <td class="precio-producto">450</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">George Bills</td>
+                    <td class="precio-producto">200</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Glen Scolans</td>
+                    <td class="precio-producto">200</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Escoth Lands W</td>
+                    <td class="precio-producto">200</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">8 PM</td>
+                    <td class="precio-producto">180</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Janmesson</td>
+                    <td class="precio-producto">450</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Tequila Subirse</td>
+                    <td class="precio-producto">450</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Kindilan</td>
+                    <td class="precio-producto">200</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Jose Sarmento</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Ron Collins</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Tom Collins</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Mimosa</td>
+                    <td class="precio-producto">350</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Paradise</td>
+                    <td class="precio-producto">380</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Tres Sombreros (silver)</td>
+                    <td class="precio-producto">270</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Tres Sombreros (golden)</td>
+                    <td class="precio-producto">275</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Olmeca Chocolate</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Medusa</td>
+                    <td class="precio-producto">380</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Olmeca Silver</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Olmeca Rep</td>
+                    <td class="precio-producto">325</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Contessa</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Mouka</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Absoult Vodka</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">SamaraKaya</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Lyubov</td>
+                    <td class="precio-producto">260</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Gin</td>
+                    <td class="precio-producto">250</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Beefeater</td>
+                    <td class="precio-producto">290</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Reython</td>
+                    <td class="precio-producto">240</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Malt Cream</td>
+                    <td class="precio-producto">240</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Ruavieja crema</td>
+                    <td class="precio-producto">300</td>
+                </tr>
+                
+
+            </tbody>
+        </table>
+        <br>
         <div id="contenedor-cafe">
             <img src="istockphoto-902883172-612x612.jpg" alt="cafe1">
             <h3>Café</h3>
@@ -206,22 +533,36 @@
         <table class="tabla cafe" id="cafe">
             <tbody>
                 <tr>
-                    <td class="columnas">
-                        <span>Ofertas</span>
-                    </td>
-                    <td class="columnas"> 
-                        <span>Precios</span></td>
-                    </tr>
-                    <tr><td class="has-text-align-center" data-align="center">Café expresso</td><td class="has-text-align-center" data-align="center">100</td></tr><tr><td class="has-text-align-center" data-align="center">Café cortado</td><td class="has-text-align-center" data-align="center">120</td></tr><tr><td class="has-text-align-center" data-align="center">Café capuchino</td><td class="has-text-align-center" data-align="center">150</td></tr><tr><td class="has-text-align-center" data-align="center">Café bombón</td><td class="has-text-align-center" data-align="center">200</td></tr><tr><td class="has-text-align-center" data-align="center">Frapuchino</td><td class="has-text-align-center" data-align="center">200</td></tr></tbody>
-                </table>
+                    <td class="nombre-producto" >Café expresso</td>
+                    <td class="precio-producto" >100</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Café cortado</td>
+                    <td class="precio-producto">120</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Café capuchino</td>
+                    <td class="precio-producto">150</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Café bombón</td>
+                    <td class="precio-producto">200</td>
+                </tr>
+                <tr>
+                    <td class="nombre-producto">Frapuchino</td>
+                    <td class="precio-producto">200</td>
+                </tr>             
+            </tbody>
+        </table>
+        <br>
     </section>
 <footer>
     <h3>Volver a...</h3>
     <article id="panel">
         <ul>
-            <li><a href="../Entrantes/index.html">Entrantes</a></li>
-            <li><a href="../Pizza/index.html">Pizzas</a></li>
-            <li><a href="../Cocina/index.html">Cocina</a></li>
+            <li><a href="../Pizza/index.html"><button>Pizza</button></a></li>
+            <li><a href="../index.html"><button>Menú</button></a></li>
+            <li><a href="../Cocina/index.html"><button>Cocina</button></a></li>
         </ul>
     </article>
 </footer>

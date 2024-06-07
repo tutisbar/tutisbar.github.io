@@ -11,6 +11,16 @@
         body{
             margin: 0;
         }
+        #contenedor-foto-inicial{
+            background-image: url("pngtree-minimalistic-cartoon-hand-drawn-catering-food-background-picture-image_1020545.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            height: 27vh;
+            width: 100%;
+            background-attachment: fixed;
+        }
+
         .seccion{
             box-shadow: 0 0 20px 0 rgb(79, 79, 79);
             border-radius: 0 0 20px 20px;
@@ -21,14 +31,65 @@
             margin-bottom: 15vh;
         }
         .tabla{
-            margin: auto;
-            padding-bottom: 10%;
-            line-height: 135%;
+            border-collapse: collapse;
         }
+        #panel{
+            background-color: #deb408;
+            padding: 5vh 0.5vw;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        .tabla tr:nth-child(2n) {
+            background-color: rgba(141, 141, 141, 0.137);
+        }
+
+        .seccion{
+            box-shadow: 0 0 20px 0 rgb(79, 79, 79);
+            border-radius: 0 0 20px 20px;
+            width: 90vw;
+            margin: auto;
+            margin-bottom: 15vh;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            background-color: rgb(255, 255, 255);
+
+        }
+        .tabla{
+            border-collapse: collapse;
+        }
+
+        #panel{
+            background-color: #deb408;
+            padding: 5vh 0.5vw;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        .seccion{
+            box-shadow: 0 0 20px 0 rgb(79, 79, 79);
+            border-radius: 0 0 20px 20px;
+            width: 90vw;
+            margin: auto;
+            margin-bottom: 15vh;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            background-color: rgb(255, 255, 255);
+
+        }
+        .tabla{
+            margin: auto;
+            padding-bottom: 8vh;
+            line-height: 135%;
+            } 
+
+        br{
+            margin: 3vh;
+        }
+
         .tabla-cabecera{
             width: 100%;
             padding-bottom: 1vh;
             text-align: center;
+            margin-bottom: 2vh;
         }
         .tabla-cabecera-fondo{
             background-color: #deb408;
@@ -39,12 +100,27 @@
             font-size: 2em;
         }
         .tragos{
-            padding-top: 2vh;
+            padding-top: 3vh;
         }
 
-        td{
+        .contenedor{
+            text-align: center;
+            border-bottom: black solid 2px;
+            margin: 0 5vw;
+            margin-bottom: 1.9%;
+        }
+        .contenedor h3{
+            margin: 1.5%;
+            font-size: 1.7em;
+        }
+
+        .tabla tr:nth-child(2n)  {
+            background-color: rgba(141, 141, 141, 0.137);
+        }
+
+        .tabla td{
             width: 40vw;
-            padding: 0.4%;
+            padding: 0.5%;
         }
         span{
             font-weight: 600;
@@ -54,15 +130,9 @@
             font-size: 1.4em;
             border-bottom: 2px solid black;
             margin-bottom: 40px;
-            background-color: rgba(255, 242, 100, 0.543);
+            background-color: #deb408;
         }
-        #contenedor-cafe{
-            display: flex;
-            margin-left: 5vw;
-        }
-        #contenedor-cafe img{
-            width: 15vh;
-        }
+
 
         #Nota{
             padding: 0.4%;
@@ -71,28 +141,17 @@
             background-color: rgba(158, 158, 158, 0.399);
             font-size: 1.1em;
         }
-        #contenedor-foto-inicial{
-            background-image: url("pngtree-minimalistic-cartoon-hand-drawn-catering-food-background-picture-image_1020545.png");
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: cover;
-            height: 27vh;
-            width: 100%;
-            background-attachment: fixed;
-        }
+
         #Inicio{
             margin: 5vh 5vw;
             padding: 2%; 
             text-align: center; 
-            font-family: 'Arial Narrow Bold', sans-serif;
+            font-family: "Brush Script MT", 'Arial Narrow Bold', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 500;
+            text-shadow: #deb408 0px 0px 5px; 
         }
 
-        #panel{
-            background-color: #deb408;
-            padding: 5vh 0.5vw;
-            text-align: center;
-            font-size: 1.3em;
-        }
         #panel ul{
             list-style: none;
             display: flex;
@@ -101,8 +160,19 @@
 
         }
         #panel li{
-            margin: 0 5vw;
-            margin-left: 6vw;
+            margin: auto;
+        }
+
+        .precio-producto{
+            text-align: center;
+        }
+
+        button{
+            background-color: rgb(239, 200, 25);
+            padding: 1.5vh 5vw;
+        }
+        #panel a{
+            text-decoration: none;
         }
 
     </style>
@@ -134,44 +204,51 @@
         <table class="tabla">
             <tbody>
                 <tr>
-                    <td>Pizza de Queso</td>
-                    <td>350</td>
+                    <td class="nombre-producto">Pizza de Queso</td>
+                    <td class="precio-producto">420</td>
                 </tr>
                 <tr>
-                    <td>Pizza de Jamón y Queso</td>
-                    <td>520</td>
+                    <td class="nombre-producto">Pizza de Jamón y Queso</td>
+                    <td class="precio-producto">590</td>
                 </tr>
                 <tr>
-                    <td>Pizza Hawaiana</td>
-                    <td>600</td>
+                    <td class="nombre-producto">Pizza Hawaiana</td>
+                    <td class="precio-producto">650</td>
                 </tr>
                 <tr>
-                    <td>Pizza de Camarones</td>
-                    <td>650</td>
+                    <td class="nombre-producto">Pizza Bordes de Queso</td>
+                    <td class="precio-producto">520</td>
                 </tr>
                 <tr>
-                    <td>Pizza de Chorizo</td>
-                    <td>520</td>
+                    <td class="nombre-producto">Pizza de Champiñón</td>
+                    <td class="precio-producto">540</td>
                 </tr>
                 <tr>
-                    <td>Pizza de Vegetales</td>
-                    <td>420</td>
+                    <td class="nombre-producto">Pizza de Vegetales</td>
+                    <td class="precio-producto">500</td>
                 </tr>
                 <tr>
-                    <td>Pizza de Champiñón</td>
-                    <td>470</td>
+                    <td class="nombre-producto">Pizza de Atún</td>
+                    <td class="precio-producto">750</td>
+                </tr>
+
+                <tr>
+                    <td class="nombre-producto">Pizza de Cebolla</td>
+                    <td class="precio-producto">500</td>
                 </tr>
             </tbody>
         </table>
+        <br>
+        
     
     </section>
 <footer>
     <h3>Volver a...</h3>
     <article id="panel">
         <ul>
-            <li><a href="../Entrantes/index.html">Entrantes</a></li>
-            <li><a href="../Cocteleria/index.html">Coctelería</a></li>
-            <li><a href="../Cocina/index.html">Cocina</a></li>
+            <li><a href="../Cocteleria/index.html"><button>Coctelería</button></a></li>
+            <li><a href="../index.html"><button>Menú</button></a></li>
+            <li><a href="../Cocina/index.html"><button>Cocina</button></a></li>
         </ul>
     </article>
 </footer>
